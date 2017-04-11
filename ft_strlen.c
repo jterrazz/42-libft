@@ -6,18 +6,16 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 19:39:06 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 19:39:43 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/11 17:15:05 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *s)
 {
 	int i;
 
 	i = 0;
-	while (*(str + i))
-	{
+	while (*(s + i))
 		i++;
-	}
 	return (i);
 }

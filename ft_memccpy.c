@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memccpy.c                                          :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 17:18:07 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 19:12:12 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/11 17:36:05 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "main.h"
 
-void *ft_memccpy(void *restrict dst, const void *restrict src, int c, size_t n)
+void *ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	unsigned char *dst_str;
 	unsigned char *src_str;

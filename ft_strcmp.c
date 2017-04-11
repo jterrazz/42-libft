@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/10 19:42:30 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:36:26 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/11 17:49:38 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/11 17:50:07 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *s1, const char *s2)
+int	ft_strcmp(const char *s1, const char *s2)
 {
-	int length1;
-	int length2;
+	int i;
 
-	length1 = 0;
-	length2 = 0;
-	while (s1[length2] != '\0')
-		length2++;
-	while (s2[length1] != '\0')
+	i = 0;
+	while (s1[i] && s2[i] && s2[i] == s1[i])
 	{
-		s1[length2 + length1] = s2[length1];
-		length1++;
+		i++;
 	}
-	s1[length1 + length2] = '\0';
-	return (s1);
+	return ((int)s1[i] - (int)s2[i]);
 }

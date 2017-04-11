@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/10 19:42:30 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:36:26 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/11 18:55:44 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/11 19:00:28 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *s1, const char *s2)
+int		ft_isalnum(int c)
 {
-	int length1;
-	int length2;
-
-	length1 = 0;
-	length2 = 0;
-	while (s1[length2] != '\0')
-		length2++;
-	while (s2[length1] != '\0')
-	{
-		s1[length2 + length1] = s2[length1];
-		length1++;
-	}
-	s1[length1 + length2] = '\0';
-	return (s1);
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
 }

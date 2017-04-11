@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/10 19:42:30 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:36:26 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/11 19:30:27 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/11 19:32:19 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *s1, const char *s2)
+int		ft_tolower(int c)
 {
-	int length1;
-	int length2;
-
-	length1 = 0;
-	length2 = 0;
-	while (s1[length2] != '\0')
-		length2++;
-	while (s2[length1] != '\0')
-	{
-		s1[length2 + length1] = s2[length1];
-		length1++;
-	}
-	s1[length1 + length2] = '\0';
-	return (s1);
+	unsigned char c_char;
+	
+	c_char = (unsigned char)c;
+	if (c_char >= 'A' && c_char <= 'Z')
+		return (c_char + 32);
+	return (c_char);
 }

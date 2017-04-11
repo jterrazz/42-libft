@@ -1,29 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/10 19:42:30 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:36:26 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/11 19:19:27 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/11 19:22:16 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcat(char *s1, const char *s2)
+int ft_isprint(int c)
 {
-	int length1;
-	int length2;
-
-	length1 = 0;
-	length2 = 0;
-	while (s1[length2] != '\0')
-		length2++;
-	while (s2[length1] != '\0')
-	{
-		s1[length2 + length1] = s2[length1];
-		length1++;
-	}
-	s1[length1 + length2] = '\0';
-	return (s1);
+	unsigned char c_char;
+	
+	c_char = (unsigned char)c;
+	if (c_char >= 20 && c_char <= 176)
+		return (1);
+	return (0);
 }
