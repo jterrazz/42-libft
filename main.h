@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 14:34:38 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 20:38:00 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 13:33:08 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #ifndef MAIN_H
 # define MAIN_H
 
+# include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
 
@@ -59,6 +60,14 @@ char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strequ(char const *s1, char const *s2);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
-char	*strsub(char const *s, unsigned int startm size_t len);
+char	*strsub(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s);
+char	**ft_strsplit(char const *s, char c); // A finir
+char	*ft_itoa(int n);
+
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
+
 
 #endif

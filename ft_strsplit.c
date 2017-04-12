@@ -1,23 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/11 19:51:25 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:16:48 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/12 12:39:58 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/12 12:52:24 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strnew(size_t size)
+char **ft_strsplit(char const *s, char c)
 {
-	char *str;
-	unsigned int i;
 	
-	i = 0;
-	str = (char *)ft_memalloc(sizeof(char) * size + 1);
-	if (str == NULL)
-		return (NULL);
-	return (str);
 }

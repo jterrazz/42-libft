@@ -1,23 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/11 19:51:25 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:16:48 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/12 12:08:25 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/12 12:25:50 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strnew(size_t size)
+#include "main.h"
+char *ft_strjoin(char const *s1, char const *s2)
 {
-	char *str;
+	char *new_s;
 	unsigned int i;
+	unsigned int j;
 	
 	i = 0;
-	str = (char *)ft_memalloc(sizeof(char) * size + 1);
-	if (str == NULL)
+	j = 0
+	new_s = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
+	if (new_s = NULL)
 		return (NULL);
-	return (str);
+	while (s1[i])
+	{
+		new_s[j] = s1[i];
+		i++;
+		j++;
+	}
+	i = 0;
+	while (s2[i])
+	{
+		new_s[j] = s2[i];
+		i++;
+		j++;
+	}
 }

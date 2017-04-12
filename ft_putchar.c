@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/11 19:51:25 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:16:48 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/12 13:25:48 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/12 13:31:18 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strnew(size_t size)
+#include "main.h"
+
+void ft_putchar(char c)
 {
-	char *str;
-	unsigned int i;
-	
-	i = 0;
-	str = (char *)ft_memalloc(sizeof(char) * size + 1);
-	if (str == NULL)
-		return (NULL);
-	return (str);
+	write(1, &c, 1);
 }
