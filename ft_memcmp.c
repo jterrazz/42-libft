@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 19:30:19 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:54:29 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 23:31:51 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	s2_c = (unsigned char *)s2;
 	while (s1_c[i] == s2_c[i] && i < n)
 		i++;
+	if (i == n)
+		return (0);
 	return (s1_c[i] - s2_c[i]);
 }
