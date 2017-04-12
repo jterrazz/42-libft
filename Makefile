@@ -6,7 +6,7 @@
 #    By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/12 20:58:37 by jterrazz          #+#    #+#              #
-#    Updated: 2017/04/12 21:20:34 by jterrazz         ###   ########.fr        #
+#    Updated: 2017/04/12 21:21:59 by jterrazz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ FILES = ft_lstiter.c ft_putendl.c ft_striter.c ft_strqu.c \
 	ft_lstdel.c ft_putchar.c ft_strdel.c ft_strnew.c \
 	ft_lstdelone.c ft_putchar_fd.c ft_strdup.c ft_strnstr.c
 
-OFILES = ft_atoi.o
+OFILES = $(FILES:.c=.o)
 
 all : $(NAME)
 
