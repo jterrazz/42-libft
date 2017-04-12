@@ -6,13 +6,14 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 14:34:38 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 22:55:58 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 00:23:21 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //	Include le h partout 
 //	Refaire strlcat
 //	Norme
+//	Check no protections on functions
 
 #ifndef MAIN_H
 # define MAIN_H
