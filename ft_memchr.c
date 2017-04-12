@@ -6,11 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 19:20:19 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/10 19:22:04 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:54:23 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.h"
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/13 15:31:24 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:53:18 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:52:48 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *str)
 {

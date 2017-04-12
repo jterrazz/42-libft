@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:39:58 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:52:24 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:57:23 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char **ft_strsplit(char const *s, char c)
 {

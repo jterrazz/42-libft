@@ -1,31 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/10 19:41:53 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:56:59 by jterrazz         ###   ########.fr       */
+/*   Created: 2017/04/12 14:49:15 by jterrazz          #+#    #+#             */
+/*   Updated: 2017/04/12 14:55:10 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncpy(char *dst, const char *src, size_t n)
-{
-	size_t i;
-
-	i = 0;
-	while (src[i] != '\0' && i < n)
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	while (i < n)
-	{
-		dst[i] = '\0';
-		i++;
-	}
-	return (dst);
+void ft_putnbr_fd(int n, int fd) {
+	if (nb > 9)
+		ft_putnbr_fd(n / 10, fd);
+	ft_putchar_fd(n % 10);
 }

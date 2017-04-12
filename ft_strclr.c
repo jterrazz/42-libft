@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:59:39 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 20:01:38 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:56:09 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {

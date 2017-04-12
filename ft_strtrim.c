@@ -6,11 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:20:56 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:39:29 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:57:35 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.h"
+#include "libft.h"
 
 unsigned int	get_trim_length(const char *str)
 {

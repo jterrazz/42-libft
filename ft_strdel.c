@@ -6,11 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:57:29 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 19:58:47 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:56:19 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.h"
+#include "libft.h"
 
 void ft_strdel(char **as)
 {

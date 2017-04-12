@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:52:35 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 13:30:31 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:54:08 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 static unsigned int	ft_lsize(long n)
 {

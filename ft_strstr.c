@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 20:18:43 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:43:26 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:57:27 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {

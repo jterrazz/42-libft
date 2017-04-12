@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 20:14:53 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 20:18:52 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:56:31 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	striteri(char *s, void (*f)(unsigned int, char *))
 {

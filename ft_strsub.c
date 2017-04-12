@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 20:38:18 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:22:54 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:57:30 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*strsub(char const *s, unsigned int start, size_t len)
 {

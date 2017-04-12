@@ -6,11 +6,12 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:08:25 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 12:25:50 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:56:35 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "main.h"
+#include "libft.h"
+
 char *ft_strjoin(char const *s1, char const *s2)
 {
 	char *new_s;

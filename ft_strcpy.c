@@ -6,9 +6,11 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 19:40:22 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/11 17:18:51 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:56:15 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {
