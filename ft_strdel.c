@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:57:29 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:56:19 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 23:06:36 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 void ft_strdel(char **as)
 {
-	ft_memdel(as);
+	ft_memdel((void **)as);
 }

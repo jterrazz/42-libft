@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:44:35 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:54:13 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 23:03:42 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 void	*ft_memalloc(size_t size)
 {
-	void *mem;
+	char *mem;
 	int i;
 
 	i = 0;
-	if (mem = malloc(size) == NULL)
+	if ((mem = (char *)malloc(size)) == NULL)
 		return (NULL);
 	while (i < size)
 	{

@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:02:59 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 21:15:17 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 22:52:17 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 int		ft_isascii(int c)
 {
-	if (c)
-		return 1;
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }

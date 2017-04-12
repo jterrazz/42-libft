@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:20:56 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:57:35 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 23:15:19 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char			*ft_strtrim(char const *s)
 	j = 0;
 	len = get_trim_length(s);
 	new_s = ft_strnew(len);
-	while (s[i] == ' ' || s[i] == '\t' || s == '\n')
+	while (s[i] == ' ' || s[i] == '\t' || s[i] == '\n')
 		i++;
 	while (i < len)
 	{

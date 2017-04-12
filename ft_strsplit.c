@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:39:58 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:57:23 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 23:13:52 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 char **ft_strsplit(char const *s, char c)
 {
-	
+	return (0);	
 }

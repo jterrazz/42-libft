@@ -6,13 +6,13 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:51:25 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:57:05 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 22:55:10 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_strnew(size_t size)
+char	*ft_strnew(size_t size)
 {
 	char *str;
 	unsigned int i;

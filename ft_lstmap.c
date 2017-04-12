@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 19:47:58 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 20:40:12 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 22:47:32 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	t_list *new;
 	t_list *start;
 	
-	if (!lst || !(*lst) || !f)
+	if (!lst || !f)
 		return (NULL);
 	new = f(lst);
 	start = new;

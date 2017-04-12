@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:08:25 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:56:35 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 23:10:50 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char *ft_strjoin(char const *s1, char const *s2)
 	unsigned int j;
 	
 	i = 0;
-	j = 0
+	j = 0;
 	new_s = ft_strnew(ft_strlen(s1) + ft_strlen(s2));
-	if (new_s = NULL)
+	if (new_s == NULL)
 		return (NULL);
 	while (s1[i])
 	{
@@ -36,4 +36,5 @@ char *ft_strjoin(char const *s1, char const *s2)
 		i++;
 		j++;
 	}
+	return (new_s);
 }

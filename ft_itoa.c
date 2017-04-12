@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:52:35 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:54:08 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/12 22:54:21 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ static void			set_itoa(char *str, long n_long, unsigned int neg, unsigned int le
 	divider = 1;
 	while (--len)
 		divider *= 10;
-	while ()
 }
 char				*ft_itoa(int n)
 {
@@ -50,4 +49,5 @@ char				*ft_itoa(int n)
 		n_long *= -1;
 	}
 	set_itoa(str, n_long, neg, len);
+	return (str);
 }
