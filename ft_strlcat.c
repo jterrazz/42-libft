@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/14 16:55:39 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 16:28:21 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 18:38:07 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	total_size = length_src + length_dst;
 	if (length_dst >= size)
 		return (size + length_src);
-	while (length_dst + i < size - 1)
+	while (length_dst + i < total_size && length_dst + i < size - 1)
 	{
 		dst[length_dst + i] = src[i];
 		i++;
 	}
-	dst[length_dst + i] = '\0';
+	dst[length_dst + i] = 0;
 	return (total_size);
 }
