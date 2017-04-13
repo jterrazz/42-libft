@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 13:41:21 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 12:58:57 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:16:55 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 void	ft_putstr_fd(char const *s, int fd)
 {
 	int i;
-	
+
 	i = 0;
 	while (s[i])
 	{
-		ft_putchar_fd(fd, s[i]);
+		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }
