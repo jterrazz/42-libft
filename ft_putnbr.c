@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 13:37:55 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 13:15:50 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:18:12 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_putnbr(int n)
 	if (n < 0)
 	{
 		ft_putchar('-');
-		nb *= -1;
+		n *= -1;
 	}
 	if (n > 9)
 		ft_putnbr(n / 10);
