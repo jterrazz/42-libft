@@ -6,14 +6,24 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 14:49:15 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 23:06:07 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:34:30 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void ft_putnbr_fd(int n, int fd) {
+	if (n == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return ;
+	}
+	if (n < 0)
+	{
+		ft_putchar('-');
+		n*=-1;
+	}
 	if (n > 9)
 		ft_putnbr_fd(n / 10, fd);
-	ft_putchar_fd(n % 10, fd);
+	ft_putchar_fd((n % 10) + '0', fd);
 }

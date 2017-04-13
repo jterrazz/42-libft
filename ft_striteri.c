@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 20:14:53 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 23:07:18 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:29:51 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	striteri(char *s, void (*f)(unsigned int, char *))
 {
-	int i;
-	
+	unsigned int i;
+
 	i = 0;
 	while (s[i])
 	{
