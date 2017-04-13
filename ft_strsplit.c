@@ -6,7 +6,7 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:51:37 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 16:18:06 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 16:57:25 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int		copy_str(char **tab, char const *str, char c)
 	return (1);
 }
 
-char	**ft_split(char const *s,char c)
+char	**ft_strsplit(char const *s,char c)
 {
 	int		nb_words;
 	char	**tab;
