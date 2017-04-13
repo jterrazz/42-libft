@@ -6,13 +6,13 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:19:27 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 12:30:47 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 12:52:56 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int		ft_isprint(int c)
 {
 	unsigned char c_char;
 	
