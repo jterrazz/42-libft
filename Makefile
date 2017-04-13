@@ -6,13 +6,13 @@
 #    By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/04/12 20:58:37 by jterrazz          #+#    #+#              #
-#    Updated: 2017/04/12 22:40:32 by jterrazz         ###   ########.fr        #
+#    Updated: 2017/04/13 19:35:21 by jterrazz         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-FILES = ft_lstiter.c ft_putendl.c ft_striter.c ft_strqu.c \
+FILES = ft_lstiter.c ft_putendl.c ft_striter.c \
 	ft_lstmap.c ft_putendl_fd.c ft_striteri.c ft_strrchr.c \
 	ft_atoi.c ft_lstnew.c ft_putnbr.c ft_strjoin.c ft_strsplit.c \
 	ft_bzero.c ft_memalloc.c ft_putnbr_fd.c ft_strlcat.c ft_strstr.c \

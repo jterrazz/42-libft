@@ -6,7 +6,7 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:51:37 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 17:16:58 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 20:10:21 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,9 +77,9 @@ char			**ft_strsplit(char const *s, char c)
 	nb_words = get_nb_words(s, c);
 	tab = (char **)malloc(sizeof(char *) * (nb_words + 1));
 	if (tab == NULL)
-		return (0);
+		return (NULL);
 	if (copy_str(tab, s, c) == 0)
-		return (0);
+		return (NULL);
 	tab[nb_words] = 0;
 	return (tab);
 }

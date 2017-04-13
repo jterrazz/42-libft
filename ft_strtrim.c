@@ -6,13 +6,13 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:20:56 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 19:15:48 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 20:03:25 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static unsigned int		get_trim_length(const char *str)
+static int		get_trim_length(const char *str)
 {
 	int i;
 	int end;
@@ -26,16 +26,16 @@ static unsigned int		get_trim_length(const char *str)
 		end--;
 	}
 	if (end - i + 1 <= 0)
-		return (0);
+		return (1);
 	return (end - i + 1);
 }
 
-char					*ft_strtrim(char const *s)
+char			*ft_strtrim(char const *s)
 {
 	char			*new_s;
-	unsigned int	len;
-	unsigned int	i;
-	unsigned int	j;
+	int	len;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;

@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:52:35 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 19:44:21 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 19:45:38 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,8 +48,8 @@ char				*ft_itoa(int n)
 {
 	char			*str;
 	long			n_long;
-	int	neg;
-	int	len;
+	int				neg;
+	int				len;
 
 	n_long = (long)n;
 	neg = 0;
