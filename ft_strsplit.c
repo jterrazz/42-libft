@@ -6,13 +6,13 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:51:37 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 16:57:25 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 17:16:58 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int		get_size(char const *str, char c)
+static int		get_size(char const *str, char c)
 {
 	int i;
 
@@ -22,7 +22,7 @@ int		get_size(char const *str, char c)
 	return (i);
 }
 
-int		get_nb_words(char const *str, char c)
+static int		get_nb_words(char const *str, char c)
 {
 	int i;
 	int nb_words;
@@ -38,7 +38,7 @@ int		get_nb_words(char const *str, char c)
 	return (nb_words);
 }
 
-int		copy_str(char **tab, char const *str, char c)
+static int		copy_str(char **tab, char const *str, char c)
 {
 	int i;
 	int j;
@@ -67,7 +67,7 @@ int		copy_str(char **tab, char const *str, char c)
 	return (1);
 }
 
-char	**ft_strsplit(char const *s,char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	int		nb_words;
 	char	**tab;
