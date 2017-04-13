@@ -6,13 +6,14 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 13:48:00 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:55:05 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:01:35 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl(char const *s) {
+void	ft_putendl(char const *s)
+{
 	ft_putstr(s);
 	ft_putchar('\n');
 }

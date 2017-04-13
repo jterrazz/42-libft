@@ -6,13 +6,13 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 13:37:55 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:55:13 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:01:54 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr(int n)
+void	ft_putnbr(int n)
 {
 	if (n > 9)
 		ft_putnbr(n / 10);

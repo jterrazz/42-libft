@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 20:38:18 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 23:14:20 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:06:42 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*strsub(char const *s, unsigned int start, size_t len)
 {
-	char *new_s;
-	unsigned int i;
+	char			*new_s;
+	unsigned int	i;
 
 	i = 0;
 	new_s = ft_strnew(len);

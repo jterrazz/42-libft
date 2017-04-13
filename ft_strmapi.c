@@ -6,17 +6,17 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 20:23:58 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/12 14:56:49 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/13 13:04:00 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int i;
-	char *new_s;
-	
+	int		i;
+	char	*new_s;
+
 	new_s = ft_strnew(ft_strlen(s));
 	i = 0;
 	while (s[i])
