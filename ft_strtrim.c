@@ -6,48 +6,44 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 12:20:56 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 20:03:25 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 12:29:30 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		get_trim_length(const char *str)
+static int		is_space(char c)
 {
-	int i;
-	int end;
-
-	end = ft_strlen(str) - 1;
-	i = 0;
-	while (str[i] && (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'))
-		i++;
-	while (end >= 0 && (str[end] == ' ' || str[end] == '\n' || str[end] == '\t'))
-	{
-		end--;
-	}
-	if (end - i + 1 <= 0)
+	if (c == ' ' || c == '\n' || c == '\t')
 		return (1);
-	return (end - i + 1);
+	return (0);
 }
 
 char			*ft_strtrim(char const *s)
 {
-	char			*new_s;
-	int	len;
-	int	i;
-	int	j;
+	int		start;
+	int		end;
+	char	*str;
+	int		i;
 
+	start = 0;
 	i = 0;
-	j = 0;
-	while (s[i] && (s[i] == ' ' || s[i] == '\t' || s[i] == '\n'))
-		i++;
-	len = get_trim_length(s);
-	new_s = ft_strnew(len);
-	while (i < len)
+	while (s[start] && is_space(s[start]))
+		start++;
+	end = ft_strlen(s) - 1;
+	while (s[end] && is_space(s[end]))
+		end--;
+	if (end - start + 1 <= 0)
+		str = ft_strnew(0);
+	else
+		str = ft_strnew(end - start + 1);
+	if (str == NULL)
+		return (NULL);
+	while (start <= end)
 	{
-		new_s[j] = s[i];
+		str[i] = s[start];
 		i++;
-		j++;
+		start++;
 	}
-	return (new_s);
+	return (str);
 }
