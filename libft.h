@@ -6,12 +6,12 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 14:34:38 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/14 20:38:01 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 20:39:52 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MAIN_H
-# define MAIN_H
+#ifndef LIBFT_H
+# define LIBFT_H
 
 # include <unistd.h>
 # include <string.h>
