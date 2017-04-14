@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 18:53:57 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/14 16:25:35 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 19:48:11 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ t_list	*ft_lstnew(void const *content, size_t content_size)
 	{
 		if ((res->content = (void *)ft_memalloc(content_size)) == NULL)
 			return (NULL);
-		res->content = (void *)content;
+		ft_memcpy(res->content, content, content_size);
 		res->content_size = content_size;
 	}
 	res->next = NULL;
