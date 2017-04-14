@@ -6,80 +6,58 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:51:37 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 20:10:21 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 13:52:22 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-static int		get_size(char const *str, char c)
+static int		tab_size(char const *s, char c)
+{
+	int count;
+	int i;
+
+	i = 0;
+	count = 0;
+	while (s[i])
+	{
+		if (s[i] != c && (i == 0 || s[i - 1] == c))
+			count++;
+		i++;
+	}
+	return (count);
+}
+
+static int		word_size(const char *str, char c)
 {
 	int i;
 
 	i = 0;
-	while (str[i] != c && str[i])
+	while (str[i] && str[i] != c)
 		i++;
 	return (i);
 }
 
-static int		get_nb_words(char const *str, char c)
-{
-	int i;
-	int nb_words;
-
-	i = 0;
-	nb_words = 0;
-	while (str[i])
-	{
-		if (str[i] != c && (str[i - 1] == c || i == 0))
-			nb_words++;
-		i++;
-	}
-	return (nb_words);
-}
-
-static int		copy_str(char **tab, char const *str, char c)
-{
-	int i;
-	int j;
-	int k;
-
-	i = 0;
-	k = 0;
-	while (str[k])
-	{
-		if (str[k] != c && (str[k - 1] == c || !k))
-		{
-			j = 0;
-			tab[i] = (char *)malloc(sizeof(char) * (get_size(&str[k], c) + 1));
-			if (tab[i] == NULL)
-				return (0);
-			while (str[k] != c && str[k])
-			{
-				tab[i][j] = str[k];
-				j++;
-				k++;
-			}
-			tab[i++][j] = 0;
-		}
-		k++;
-	}
-	return (1);
-}
-
 char			**ft_strsplit(char const *s, char c)
 {
-	int		nb_words;
 	char	**tab;
+	int		i;
+	int		nb_words;
 
-	if (s == NULL)
-		return (0);
-	nb_words = get_nb_words(s, c);
-	tab = (char **)malloc(sizeof(char *) * (nb_words + 1));
-	if (tab == NULL)
+	i = 0;
+	nb_words = tab_size(s, c);
+	if ((tab = (char **)malloc(sizeof(char *) * (nb_words + 1))) == NULL)
 		return (NULL);
-	if (copy_str(tab, s, c) == 0)
-		return (NULL);
-	tab[nb_words] = 0;
+	while (nb_words--)
+	{
+		while (*s == c && *s)
+			s++;
+		tab[i] = ft_strsub(s, 0, word_size(s, c));
+		if (tab[i] == NULL)
+			return (NULL);
+		s = s + word_size(s, c);
+		i++;
+	}
+	tab[i] = NULL;
 	return (tab);
 }
