@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 19:44:36 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 12:54:33 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 16:16:02 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
 {
-	if (!lst || !f)
-		return ;
 	while (lst != NULL)
 	{
 		f(lst);

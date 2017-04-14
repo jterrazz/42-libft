@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 19:28:09 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 12:56:37 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 16:15:32 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {
 	t_list *next;
 
-	if (!alst || !del)
-		return ;
 	while (*alst != NULL)
 	{
 		next = (*alst)->next;

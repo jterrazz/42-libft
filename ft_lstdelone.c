@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/12 19:02:58 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 12:53:43 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 16:15:09 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 {
-	if (!alst || !del || !*alst)
-		return ;
 	del((*alst)->content, (*alst)->content_size);
 	free(*alst);
 	*alst = NULL;
