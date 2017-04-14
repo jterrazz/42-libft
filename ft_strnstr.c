@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 20:19:52 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/14 16:01:04 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 19:32:26 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t str_len;
 
 	i = 0;
-	if (!little)
+	if (*big == 0)
+		return (NULL);
+	if (*little == 0)
 		return ((char *)big);
 	str_len = ft_strlen(little);
 	while (big[i] && (i + str_len) <= len)
