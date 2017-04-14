@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 18:51:53 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 12:50:40 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 14:37:56 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int		ft_isdigit(int c)
 {
-	unsigned char c_char;
-
-	c_char = (unsigned char)c;
-	if (c_char >= '0' && c_char <= '9')
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
