@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:19:27 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 16:05:07 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 14:23:02 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int		ft_isprint(int c)
 {
-	unsigned char c_char;
-
-	c_char = (unsigned char)c;
-	if (c_char >= 32 && c_char <= 126)
+	if (c >= 32 && c <= 126)
 		return (1);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:30:27 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/13 13:06:20 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/14 14:22:31 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,7 @@
 
 int		ft_tolower(int c)
 {
-	unsigned char c_char;
-
-	c_char = (unsigned char)c;
-	if (c_char >= 'A' && c_char <= 'Z')
-		return (c_char + 32);
-	return (c_char);
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return (c);
 }
