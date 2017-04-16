@@ -6,12 +6,12 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/11 19:48:47 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/16 15:28:18 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/16 15:45:59 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdlib.c"
+#include "stdlib.h"
 
 void	ft_memdel(void **ap)
 {
