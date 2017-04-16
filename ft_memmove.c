@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 18:26:16 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/15 01:04:06 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/16 15:36:13 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	else
 	{
 		while (len--)
-		{
 			dst_str[len] = src_str[len];
-		}
 	}
 	return (dst);
 }

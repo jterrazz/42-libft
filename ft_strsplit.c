@@ -6,11 +6,12 @@
 /*   By: jterrazz <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/20 18:51:37 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/14 13:52:22 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/16 15:41:03 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int		tab_size(char const *s, char c)
 {
