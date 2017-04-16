@@ -6,7 +6,7 @@
 /*   By: jterrazz <jterrazz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 18:26:16 by jterrazz          #+#    #+#             */
-/*   Updated: 2017/04/16 15:36:13 by jterrazz         ###   ########.fr       */
+/*   Updated: 2017/04/16 16:17:52 by jterrazz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*dst_str;
-	unsigned char	*src_str;
+	char	*dst_str;
+	char	*src_str;
 	size_t			i;
 
 	i = 0;
-	dst_str = (unsigned char *)dst;
-	src_str = (unsigned char *)src;
+	dst_str = (char *)dst;
+	src_str = (char *)src;
+	if (dst == src)
+		return (dst);
 	if (dst_str < src_str)
 		ft_memcpy(dst_str, src_str, len);
 	else
