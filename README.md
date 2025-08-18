@@ -2,5 +2,4 @@
 
 # 42 Libft
 
-> Basic functions implemented in C at the 42 Paris School.
-
+Foundational libc reimplementation in C for 42 projects.
