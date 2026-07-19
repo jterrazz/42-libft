@@ -1,0 +1,11 @@
+# Compiled
+*.o
+*.a
+*.so
+*.out
+a.out
+*.dSYM/
+
+# OS
+.DS_Store
+Thumbs.db
